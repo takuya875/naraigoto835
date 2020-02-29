@@ -1,12 +1,14 @@
 <div class="contents row">
-  <%= form_tag('/tweets', method: :post) do %>
-  <%# ルーティングに設定しているパスとHTTPメソッドを定義している %>
-    <h3>
-      投稿する
-    </h3>
-    <input placeholder="日付" type="date" name="date">
-    <input placeholder="画像URLor動画URL" type="text" name="image">
-    <textarea cols="30" name="text" placeholder="内容" rows="10"></textarea>
-    <input type="submit" value="SENT">
-  <% end %>>
+  <div class="container">
+    <%= form_tag('/tweets', method: :post) do %>
+    <%# ルーティングに設定しているパスとHTTPメソッドを定義している %>
+      <h3>
+        投稿する
+      </h3>
+      <input placeholder="日付" type="date" name="date">
+      <input placeholder="画像URLor動画URL" type="text" name="image">
+      <textarea cols="30" name="text" placeholder="内容" rows="10"></textarea>
+      <input type="submit" value="SENT">
+    <% end %>>
+  </div>
 </div>
